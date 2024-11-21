@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0ded4;
+}
+
+.line-wrap {
+    margin: bottom 10px;
+}
+
+.line-wrap:after {
+    content: "";
+    width:15px; 
+    height: 15px;
+    background-color: transparent;
+}
+
+.line {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #2c2c2c;
+}
+
