@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #ffffff;
 }
 
@@ -52,14 +52,17 @@ nav img {
 }
 
 .Book{
+    display: flex;
+    
     position: relative;
-    left: 100px;
+    left: 450px;
     bottom: 35px;
     align-self: center;
     background-color: #667163;
     width: 400px;
     height: 570px;
-    overflow: hidden; 
+    overflow: hidden;
+    display: flex;
 }
 
 .line{
@@ -67,12 +70,26 @@ nav img {
     width:60px;
     height: 570px;
 }
-.textbox{
+.text-box{
+    padding: 15px;
     position: relative;
     background-color: #ffffff;
-    width: 100px;
+    width: 240px;
     height: 100px;
+    top: 150px;
+    left: 30px;
+    overflow: hidden;
+
 }
+.book-head{
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+    
+
 
 
 
