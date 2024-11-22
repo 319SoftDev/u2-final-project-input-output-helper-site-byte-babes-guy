@@ -52,8 +52,10 @@ nav img {
 }
 
 .Book{
+    display: flex;
+    
     position: relative;
-    left: 100px;
+    left: 350px;
     bottom: 35px;
     align-self: center;
     background-color: #667163;
