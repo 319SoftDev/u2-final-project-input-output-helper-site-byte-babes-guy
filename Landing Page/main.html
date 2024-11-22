@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Byte Babes & Guy</title>
     <!-- Link to external CSS -->
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="landingstyle.css">
 </head>
 <body>
@@ -28,6 +29,10 @@
     <!-- Main Content Section -->
     <main>
         <div class="container">
+            <div class="title-wrap">
+                <span>Title:</span>
+                <input type="text" class="title">
+            </div>
             <div class="line-wrap">
                 <input type="text" class="line">
             </div>
@@ -94,7 +99,15 @@
 
     <!-- Link to external JavaScript -->
     <script src="scripts.js"></script>
-</body>
+
+    <script>
+        const lines = document.querySelectorAll(",line");
+        lines.forEach(line => { string: void 
+            line.setAttribute("maxLength", line.offsetWidth/12)
+
+        })
+    </script>
+    </body>
 <!-- Footer Section -->
 <footer>
     <p>&copy; 2024 Byte Babes & Guy. All rights reserved.</p>
