@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Journal</title>
+    <title>Journal</title>
     <link rel="stylesheet" href="book.css">
 </head>
 <body>
-    <!-- Header-->
-    <nav>
-        <!-- Image/logo -->
-        <img src="Byte.png" alt="Byte Logo">
-
-        <!-- Navigation Links -->
-        <div class="nav-links">
-            <a href="#">Journal</a>
-            <a href="#">Contact</a>
-            <a href="#">Sign-In</a>
-            <a href="#">Register</a>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="Byte.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign-In</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
     </nav>
-    <section>
-        <div class="main-box">
-            <div class="Book">
-                <div class="line"></div>
-                <div class="text-box">
-                    <h1 class="book-head">Byte</h1>
-                    <div class="book-text-lines"></div>
-                </div>
-            </div>
 
+    <!-- Book Section -->
+    <div class="book-container">
+        <div class="book">
+            <span class="page"></span>
+            <span class="page"></span>
+            <span class="page"></span>
+            <span class="page"></span>
+            <span class="page"></span>
+            <span class="page"></span>
+            <span class="cover"></span>
+            <span class="page"></span>
+            <span class="cover"></span>
         </div>
-    </section>
+        <div class="controls">
+            <button id="open-book">Open Book</button>
+            <button id="reset-book">Reset Book</button>
+        </div>
+    </div>
+    <script src="book.js"></script>
 </body>
 </html>
