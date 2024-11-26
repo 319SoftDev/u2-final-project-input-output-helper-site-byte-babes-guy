@@ -8,12 +8,14 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="land.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Header-->
     <nav>
         <!-- Image/logo -->
         <img src="Byte.png" alt="Byte Logo">
+
 
         <!-- Navigation Links -->
         <div class="nav-links">
@@ -60,11 +62,11 @@
                         <div class="line-wrap">
                             <input type="text" class="line">
                         </div>
-                        
+                       
                        
                        
              
-            
+           
                     </div>
                 </div>
             </div>
@@ -72,16 +74,33 @@
     </section>
    
         <br>
-    
+   
+
 
     <!-- Link to external JavaScript -->
      <script>
         const lines = document.querySelectorAll(",line");
-        lines.forEach(line => { string: void 
+        lines.forEach(line => { string: void
             line.setAttribute("maxLength", line.offsetWidth/12)
+
 
         })
     </script>
     </body>
+
+    <footer>
+        <div class="half">
+            <h5>Subscribe To Our Newsletter</h6>
+            <br>
+            <div class="email">
+                
+                <input type="email" placeholder="Email"
+                <i class="fa fa-envelope"></i>
+                <br>
+                <button type="submit">Subscribe</button>
+        </div>
+        </div>
+    </footer>
+
 
 </html>
