@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #2D4A3D; /* Green theme */
-    color: white;
+    background-color: #d7d4c3; /* Beige theme for middle ground */
+    color: #3b3e3b; /* Dark grey text */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #1B3A30; /* Darker green */
+    background-color: #ffffff; /* White navbar */
     position: fixed;
     top: 0;
     z-index: 10;
@@ -41,14 +41,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #E9E6C4; /* Light beige */
+    color: #3b3e3b; /* Dark grey */
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #3A5E4D; /* Softer green */
+    background-color: #ffffff; /* White hover */
 }
 
 /* Book Styling */
@@ -63,6 +63,12 @@ body {
     width: 30rem;
     height: 20rem;
     perspective: 100rem; /* Adjust perspective */
+    transform: scale(1); /* Default size */
+    transition: transform 0.4s ease-in-out; /* Smooth zoom effect */
+}
+
+.book:hover {
+    transform: scale(1.05); /* Slightly pop out */
 }
 
 /* Cover and Pages Styling */
@@ -75,28 +81,36 @@ body {
     box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     transform: rotateY(0deg);
-    transition: transform 0.8s ease-in-out;
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1); /* Smooth animation */
 }
 
 .cover {
-    background-color: #3A5E4D; /* Green cover */
+    background-color: #3b3e3b; /* Dark grey cover */
 }
 
 .page {
-    background-color: #E9E6C4; /* Beige pages */
+    background-color: #ffffff; /* White pages */
     font-size: 8px;
     color: #777;
     font-family: monospace;
 }
 
-/* Turn animation for cover and pages */
-.page.turn, .cover.turn {
-    transform: rotateY(-180deg); /* Flip outward */
+/* Open to the middle animation */
+.page:nth-child(even) {
+    transform: rotateY(-90deg); /* Stack evenly */
+}
+
+.page.turn {
+    transform: rotateY(-180deg); /* Open pages */
+}
+
+.cover.turn {
+    transform: rotateY(-180deg); /* Open cover */
 }
 
 /* Button Styling */
 .controls button {
-    background-color: #3A5E4D; /* Green button */
+    background-color: #3b3e3b; /* Dark grey button */
     color: white;
     border: none;
     border-radius: 4px;
@@ -104,9 +118,10 @@ body {
     margin: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .controls button:hover {
-    background-color: #1B3A30; /* Darker green */
+    background-color: #ffffff; /* White background on hover */
+    color: #3b3e3b; /* Dark grey text on hover */
 }
