@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #d7d4c3; /* Beige theme for middle ground */
-    color: #3b3e3b; /* Dark grey text */
+    background-color: #d7d4c3;
+    color: #3b3e3b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #ffffff; /* White navbar */
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     z-index: 10;
@@ -41,14 +41,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #3b3e3b; /* Dark grey */
+    color: #3b3e3b;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #ffffff; /* White hover */
+    background-color: #ffffff;
 }
 
 /* Book Styling */
@@ -62,13 +62,13 @@ body {
     margin: auto;
     width: 30rem;
     height: 20rem;
-    perspective: 100rem; /* Adjust perspective */
-    transform: scale(1); /* Default size */
-    transition: transform 0.4s ease-in-out; /* Smooth zoom effect */
+    perspective: 100rem;
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
 }
 
 .book:hover {
-    transform: scale(1.05); /* Slightly pop out */
+    transform: scale(1.05);
 }
 
 /* Cover and Pages Styling */
@@ -76,41 +76,53 @@ body {
     position: absolute;
     width: 15rem;
     height: 20rem;
-    transform-origin: left center; /* Flip from the spine */
+    transform-origin: left center;
     border-radius: 5px 0 0 5px;
     box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 15px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     transform: rotateY(0deg);
-    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1); /* Smooth animation */
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/* Cover Styling */
 .cover {
-    background-color: #3b3e3b; /* Dark grey cover */
+    background-color: #3b3e3b;
+    z-index: 10;
 }
 
+/* Page Styling */
 .page {
-    background-color: #ffffff; /* White pages */
-    font-size: 8px;
+    background-color: #ffffff;
+    font-size: 12px;
     color: #777;
     font-family: monospace;
+    z-index: 5;
 }
 
 /* Open to the middle animation */
-.page:nth-child(even) {
-    transform: rotateY(-90deg); /* Stack evenly */
+.book.open .cover {
+    transform: rotateY(-180deg); /* Open the cover to the back */
 }
 
-.page.turn {
-    transform: rotateY(-180deg); /* Open pages */
+.book.open .page:nth-child(1) {
+    transform: rotateY(-180deg); /* First page rotates */
 }
 
-.cover.turn {
-    transform: rotateY(-180deg); /* Open cover */
+.book.open .page:nth-child(2) {
+    transform: rotateY(-180deg); /* Second page rotates */
+}
+
+.book.open .page:nth-child(3) {
+    transform: rotateY(0deg); /* Third page remains in place */
+}
+
+.book.open .page:nth-child(4) {
+    transform: rotateY(0deg); /* Fourth page remains in place */
 }
 
 /* Button Styling */
 .controls button {
-    background-color: #3b3e3b; /* Dark grey button */
+    background-color: #3b3e3b;
     color: white;
     border: none;
     border-radius: 4px;
@@ -122,6 +134,6 @@ body {
 }
 
 .controls button:hover {
-    background-color: #ffffff; /* White background on hover */
-    color: #3b3e3b; /* Dark grey text on hover */
+    background-color: #ffffff;
+    color: #3b3e3b;
 }
