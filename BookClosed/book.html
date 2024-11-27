@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal</title>
+    <title>Interactive Book</title>
     <link rel="stylesheet" href="book.css">
 </head>
 <body>
@@ -23,7 +23,10 @@
         <div class="book">
             <span class="page"></span>
             <span class="page"></span>
-            <span class="page"></span>
+            <span class="page">
+                <!-- Button inside the book -->
+                <button class="inside-book-btn" onclick="window.location.href='your-page.html'">Click Me</button>
+            </span>
             <span class="page"></span>
             <span class="page"></span>
             <span class="page"></span>
@@ -33,7 +36,6 @@
         </div>
         <div class="controls">
             <button id="open-book">Open Book</button>
-            <button id="reset-book">Reset Book</button>
         </div>
     </div>
     <script src="book.js"></script>
