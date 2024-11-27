@@ -106,19 +106,28 @@ body {
 
 .half .email input{
     height:  80%;
-    padding-left: 80px;
+    padding-left: 90px;
     outline: none;
     border-width: 1.5px;
-    border-radius: 20px;
+
 }
 
 .half .email button {
     position: absolute;
-    top:10%;
-    right: 10px;
+    top:12%;
+    right: 20px;
     padding: 5px 2px;
     cursor: pointer;
-    border-radius: 20px;
+   
     border-width: 1.5px;
     outline: none;
+    background-color: #2c2c2c;
 }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#e0ded4;
+    color: #2c2c2c;
+}
+
