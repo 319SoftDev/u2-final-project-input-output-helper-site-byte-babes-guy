@@ -60,7 +60,8 @@ nav img {
     padding:  20px;
     background-color:#d7d4c3;
     width: 200;
-    height: 480px;
+    height: 650px;
+    overflow: auto;
 }
 
 
@@ -73,7 +74,7 @@ nav img {
     flex-direction: column;
     background-color: #f8f3e6;
     padding: 25px 20px;
-    
+    overflow: auto;
 }
 
 
