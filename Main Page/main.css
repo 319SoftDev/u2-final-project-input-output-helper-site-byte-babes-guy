@@ -12,7 +12,6 @@
 body {
     font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
 }
 
 nav {
@@ -66,8 +65,8 @@ nav img {
     background-color: #f8f3e6;
     padding: 25px 20px;
     overflow: auto;
+    word-wrap: break-word;
 }
-
 
 .line-wrap {
     margin: 0px;
@@ -93,7 +92,6 @@ nav img {
     border: none;
     border-bottom: 1px solid #2c2c2c;
     font-size: 20px;
-
 }
 
 
@@ -101,11 +99,9 @@ nav img {
     margin-bottom: 0;
 }
 
-
 .title-wrap{
     margin-bottom: 20px;
 }
-
 
 .title{
     border: none;
@@ -138,7 +134,6 @@ nav img {
 .half .email {
     height: 50px;
     position: relative;
-    
 }
 
 .half .email input{
@@ -146,7 +141,6 @@ nav img {
     padding-left: 90px;
     outline: none;
     border-width: 1.5px;
-
 }
 
 .half .email button {
