@@ -1,7 +1,6 @@
 
 *
 
-
 {
     margin: 0;
     padding: 0;
@@ -9,7 +8,6 @@
     outline: none;
     
 }
-
 
 body {
     font-size: 18px;
@@ -25,17 +23,14 @@ nav {
     padding: 10px 20px;
 }
 
-
 nav img {
     height: 40px;
 }
-
 
 .nav-links {
     display: flex;
     gap: 20px; /* Space between buttons */
 }
-
 
 .nav-links a {
     color: #E0ded4;
@@ -46,15 +41,13 @@ nav img {
     transition: background-color 0.3s;
 }
 
-
 .nav-links a:hover {
     background-color: #3b3e3b;
 }
+
 .journal{
     border: #ffffff;
 }
-
-
 
 .main-box{
     padding:  20px;
@@ -63,8 +56,6 @@ nav img {
     height: 650px;
     overflow: auto;
 }
-
-
 
 .container {
     width: 45%;
@@ -82,8 +73,6 @@ nav img {
     margin: 0px;
     margin-bottom: 10px;
     display:flex;
-
-
 }
 
 
@@ -95,7 +84,6 @@ nav img {
     margin-left:10px;
     border-radius: 50%;
     background-color: #ffffff;
- 
 }
 
 
@@ -116,8 +104,6 @@ nav img {
 
 .title-wrap{
     margin-bottom: 20px;
-
-
 }
 
 
@@ -129,6 +115,8 @@ nav img {
     max-width: 78%;
 }
 
+
+/*  All of below is for the footer */
 .email{
     padding-bottom: 0px;
     position: relative;
