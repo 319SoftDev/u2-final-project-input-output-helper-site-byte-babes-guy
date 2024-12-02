@@ -1,4 +1,3 @@
-
 /* Reset margin and padding */
 * {
     margin: 0;
@@ -6,10 +5,12 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #e0deD4;
 }
+
 
 /* Navbar styling */
 nav {
@@ -20,14 +21,17 @@ nav {
     padding: 10px 20px;
 }
 
+
 nav img {
-    height: 40px; 
+    height: 40px;
 }
+
 
 .nav-links {
     display: flex;
     gap: 20px; /* Space between buttons */
 }
+
 
 .nav-links a {
     color: #E0ded4;
@@ -38,16 +42,179 @@ nav img {
     transition: background-color 0.3s;
 }
 
+
 .nav-links a:hover {
     background-color: #3b3e3b;
 }
 .journal{
-    border: #E0ded4;
+    border: #ffffff;
 }
+
 
 .main-box{
     padding: 50px;
     background-color:#d7d4c3;
-    width: 100%;
-    height: 500px auto;
+    width: 100;
+    height: 300px;
+}
+
+
+.actual-quote{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    font-size: 35px;
+    padding:25px;
+    font-family: Arial, sans-serif;
+
+
+}
+.quote{
+    box-shadow: 8px 4px 22px 9px rgb(189, 188, 174);
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    height:200px;
+    font-family: Arial, sans-serif;
+}
+
+
+.section-2{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-family: Arial, sans-serif;
+
+
+}
+
+
+.textB{
+    color:#697269c2;
+    padding:5px;
+    font-family: Arial, sans-serif;
+}
+
+
+.box-quote{
+    top:490px;
+    text-align: right;
+    padding:10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    width: 300px;
+    height:100px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    
+  
+}
+
+
+.quotes{
+    justify-content: space-between;
+    display: flex; 
+    gap:30px;
+    padding-top: 3%;
+    
+}
+
+ 
+.More-quotes{
+    text-align: right;
+    padding:10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    height:100px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    flex-basis: 100%
+}
+.More-quotes2{
+    background-color: #ffffff;
+    height:100px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    padding:10px;
+    flex-basis: 100%
+}
+.section3{
+    justify-content: space-between;
+    display: flex;
+    gap:30px;
+
+
+}
+
+.section4{
+    justify-content: space-between;
+    display: flex;
+    gap:30px;
+ 
+}
+
+.foot{
+    background-color: #ffffff;
+    height: 150px;
+   
+    
+}
+
+h4{
+    padding-top: 3%;
+    text-align: center;
+}
+.foots{
+    text-align: center;
+    font-size: small;
+    color:#3b3e3b52;
+}
+
+.qsandts{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+   padding: 30px 2px 50px ;
+    width:80vw;
+    margin:auto;
+}
+
+.heading > h4 {
+    text-align: left;
+   
+}
+form{
+    display: flex;
+    gap:5px;
+    margin: auto;
+    
+    
+}
+
+#email{
+    height: 30px;
+    border-color: rgb(221, 231, 231);
+    border-radius: 5px;
+    margin: auto;  
+    display: block;
+    
+}
+#submitButton{
+    display: flex;
+    align-items: center;
+    background: #000000;
+    color: white;
+    border-style: outset;
+    border-color: #161718;
+    height: 30px;
+    width: 80px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 5px;
+    
+}
+
+.whole-email{
+
 }
