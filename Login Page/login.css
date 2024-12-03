@@ -161,7 +161,7 @@ footer .emailbox button {
     padding: 10px 30px;
     font-size: 16px;
     color: #ffffff;
-    background-color: #3498db; /* Bright blue */
+    background-color: #23411b; /* Bright blue */
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -170,7 +170,7 @@ footer .emailbox button {
 }
 
 footer .emailbox button:hover {
-    background-color: #4da8e4; /* Darker blue on hover */
+    background-color: #23411b; /* Darker blue on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 

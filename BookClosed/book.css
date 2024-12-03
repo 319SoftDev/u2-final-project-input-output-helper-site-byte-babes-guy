@@ -165,21 +165,22 @@ footer {
     width: 100%;
     background-color: #3b3e3b;
     color: #ffffff;
-    padding: 20px 10px;
+    padding: 40px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
 
 footer .foot h4 {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 24px;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
 footer .foots {
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin-bottom: 20px;
+    font-size: 16px;
     color: #d7d4c3;
 }
 
@@ -187,17 +188,17 @@ footer .Whole-email {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     margin-top: 15px;
     gap: 10px; /* Space between the email input and the button */
 }
 
 footer .emailbox input[type="email"] {
-    width: 70%;
-    max-width: 300px;
-    padding: 10px;
-    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 25px;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     color: #3b3e3b;
     background-color: #ffffff;
     outline: none;
@@ -205,22 +206,23 @@ footer .emailbox input[type="email"] {
 
 footer .emailbox input[type="email"]::placeholder {
     color: #aaa;
+    font-size: 14px;
 }
 
-footer .container button {
-    padding: 10px 20px;
-    font-size: 14px;
+footer .emailbox button {
+    padding: 10px 30px;
+    font-size: 16px;
     color: #ffffff;
-    background-color: #3498db; /* Bright blue */
+    background-color: #23411b; /* Bright blue */
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     font-weight: bold;
 }
 
-footer .container button:hover {
-    background-color: #4da8e4; /* Darker blue on hover */
+footer .emailbox button:hover {
+    background-color: #23411b; /* Darker blue on hover */
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -233,9 +235,10 @@ footer .container button:hover {
 
     footer .emailbox input[type="email"] {
         width: 100%;
+        max-width: 300px;
     }
 
-    footer .container button {
+    footer .emailbox button {
         width: 100%;
     }
 }
