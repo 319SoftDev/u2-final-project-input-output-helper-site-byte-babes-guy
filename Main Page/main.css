@@ -26,7 +26,7 @@ nav img {
     height: 40px;
 }
 
-.nav-links {
+nav-links {
     display: flex;
     gap: 20px; /* Space between buttons */
 }
@@ -65,13 +65,14 @@ nav img {
     background-color: #f8f3e6;
     padding: 25px 20px;
     overflow: auto;
-    word-wrap: break-word;
+    
 }
 
 .line-wrap {
     margin: 0px;
     margin-bottom: 10px;
     display:flex;
+    word-break: break-word;
 }
 
 
