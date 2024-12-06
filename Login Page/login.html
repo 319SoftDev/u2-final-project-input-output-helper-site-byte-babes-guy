@@ -29,24 +29,28 @@
     
           <div class="login-box">
             
-            <h2>JOIN US TODAY</h2>
+            
             <form action="#" method="post">
+            
+              <h2>JOIN US TODAY</h2>
               
               <input type="text" placeholder="Enter Username" name="uname" required>
       
               <input type="password" placeholder="Enter Password" name="psw" required>
-      
-              <div class="options ">
-                <input type="checkbox" id="remember" name="remember">
-                
-                <label for="remember">Remember me</label>
-                <a href="#">Forgot password</a>
-              </div>
-      
-              <button type="submit">login</button>
-
               
-              <p>dont have an account?<a href="#" id="Register">Register</a></p>
+              <div class="login">
+                
+                <div class="options ">
+                  <input type="checkbox" id="remember" name="remember">
+                  
+                  <label for="remember">Remember me</label>
+                  <!-- <a href="#">Forgot password</a>  -->
+                </div>
+      
+                <button type="submit">login</button>
+                <p>dont have an account?<a href="#" id="Register">Register</a></p>
+              
+              </div>
             
             </form>
           </div>
@@ -57,19 +61,17 @@
 
     <footer>
       <div class="half">
-          <h5>FOLLOW OUR LATEST UPDATES</h6>
-          <br>
-          <div class="email">
-              <input type="email" placeholder="Email"
-              <i class="fa fa-envelope"></i>
-              <br>
-
-
-              <button type="submit" [ style="color:rgb(224, 219, 209)">Subscribe</button>
-              &nbsp;
-              <p>&copy; 2024 Byte Babes & Guy. All rights reserved.</p>
-             
-      </div>
+          
+        <h5>FOLLOW OUR LATEST UPDATES</h5>
+          
+        <div class="email">
+            <input class="last-email" type="email" placeholder="Email">
+            <i class="fa fa-envelope"></i>
+            <button type="submit"  id="back" id="sub">Subscribe</button> 
+        </div>
+          
+        <p>&copy; 2024 Byte Babes & Guy. All rights reserved.</p>
+      
       </div>
   </footer>
 
@@ -85,5 +87,3 @@
 </body>
 
 </html>
-
-   
