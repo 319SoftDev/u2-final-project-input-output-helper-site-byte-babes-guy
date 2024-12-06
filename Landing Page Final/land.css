@@ -106,6 +106,7 @@ nav img {
     height:100px;
     font-family: Arial, sans-serif;
     border-radius: 10px;
+    overflow: hidden;
     
   
 }
@@ -128,7 +129,8 @@ nav img {
     height:100px;
     font-family: Arial, sans-serif;
     border-radius: 10px;
-    flex-basis: 100%
+    flex-basis: 100%;
+    overflow:hidden;
 }
 .More-quotes2{
     background-color: #ffffff;
@@ -136,7 +138,8 @@ nav img {
     font-family: Arial, sans-serif;
     border-radius: 10px;
     padding:10px;
-    flex-basis: 100%
+    flex-basis: 100%;
+    overflow: hidden;
 }
 .section3{
     justify-content: space-between;
